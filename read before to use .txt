@@ -1,5 +1,5 @@
 node version v14.16.0
-angularjs version v1.6.9
+angularjs version v1.7.5
 
 
 iniciar proyecto angular 
