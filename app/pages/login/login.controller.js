@@ -61,10 +61,14 @@ $scope.loading;
       window.location.href = "/#!/clientes"; 
       localStorage.setItem(  "user", JSON.stringify($rootScope.user) );
       }
-
-     // console.log(response.data);
+      $scope.loading=false;
+      $scope.hideLogin=false;
+      $scope.message ="* Usuario invalido";
+      //console.log(response.data);
   }, 
   function(err) { // optional
+    $scope.loading=false;
+    $scope.hideLogin=false;
   console.log(err);
   });
 
