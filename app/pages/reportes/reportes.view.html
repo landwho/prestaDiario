@@ -1,0 +1,63 @@
+<div id="about" class="ng-scope">
+    <div class="container container-heigth">
+     
+       
+       
+          <br><br>
+              
+      
+  
+  
+  <div class="col-md-12">
+      <div class="row">
+          
+  
+    
+  </div>
+    
+          <div class="row">
+              <div class="col-md-6"> <h3>REPORTE DEL DÍA </h3> </div>
+                  <div class="col-md-4">
+                      
+                      <input ng-model="date" type="date" value="20/01/2019" class="ng-pristine ng-untouched ng-valid ng-empty">
+                  </div>
+  
+  
+                  <div class="col-md-2 text-right">
+                      <button class="btn btn-warning buttonwidth" ng-click="getReport()">REPORTE</button>
+                  </div>
+          
+               
+              </div>        
+          
+                      <br>
+          
+          
+          
+      <table class="responsive">
+              <thead>
+                  <tr>
+                      <th class="theadColor">Fecha</th>
+                      <th class="theadColor">Cliente</th>
+                      <th class="theadColor">Abono</th>
+                  
+               
+                  </tr>
+              </thead>
+              <tbody><!-- ngRepeat: r in reportToDate | filter:searchText -->
+              <tr class="totalBackGroundColor">  
+                  <td class="totalBackGroundColor">  TOTAL</td> 
+                  <td class="totalBackGroundColor"> </td> 
+                  <td class="totalBackGroundColor ng-binding"> Q.</td> 
+              </tr>
+            
+              
+              </tbody></table>
+          
+              <br><br><br>
+          
+              <!-- <button ng-click="imprSelec('grandTotal')" target="_parent">click aqui para imprimir</button></div>  -->
+              
+          
+  </div>
+  </div></div>

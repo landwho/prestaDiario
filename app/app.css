@@ -1,0 +1,534 @@
+/* app css stylesheet */
+
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+header,
+nav {
+  display: block;
+}
+
+
+
+
+h1,h2 {
+  text-transform: uppercase;
+  margin-bottom: .5em;
+  line-height: 110%;  
+}
+
+h1{
+  font-size: 200%;
+  text-shadow: 3px 3px 2px rgb(164,22,45), 6px 6px 5px rgba(0,0,0,.8);
+  margin-top: 150px;
+}
+
+
+a{  
+  font-size: 12px;
+  text-decoration: none;
+  color:white;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 3px rgba(0,0,0,.4);
+}
+
+a {transition:color .3s;}
+a:hover{color:orange;}
+
+.center {
+  margin: 0 auto;
+}
+
+.content {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.clear {
+  clear: both;
+}
+
+#header {
+  width: 100%;
+  background: url('images/header-bg.png');
+  height: 80px;
+  position: fixed;
+  z-index: 1;
+}
+
+#nav {
+  float: right;
+  margin-top: 20px;
+  text-align: right;
+}
+
+#logo a {
+  color: #fff;
+  text-decoration: none;
+  float: left;
+  font-size: 30px;
+  margin-top: 20px;
+  color: #fff;
+  font-family: "Wellfleet";
+  font-weight: bold;
+}
+
+#logo a:hover {
+  color: yellow;
+}
+
+#nav ul {
+  list-style: none;
+  display: block;
+  margin: 0 auto;
+}
+
+#nav li {
+  margin-top: 9px;
+  float: left;
+  padding-left: 21px;
+}
+
+#nav li a {
+  color: #fff;
+  opacity: 0.6;
+  font-size: 16px;
+  text-decoration: none;
+ /* font-family: 'Wellfleet';*/
+      font-weight: 600;
+}
+
+#nav li a.active {
+  color: #fff;
+  opacity: 1;
+}
+
+#nav li a:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+.quotes {
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-weight: normal;
+  font-size: 30px;
+  text-align: left;
+  margin: 50px auto;
+}
+
+.quotes_container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+
+#button {
+  background: url('http://landing.oxanaweb.com/images/button.png') no-repeat;
+  width: 251px;
+  height: 48px;
+  margin: 0 auto;
+  display: block;
+  padding-top: 5px;
+}
+
+
+
+#arrow {
+  background: url('http://landing.oxanaweb.com/images/arrow.png') no-repeat;
+  height: 60px;
+  width: 40px;
+  margin: 0 auto;
+  display: block;
+}
+
+#home,
+#about {
+  width: 100%;
+}
+
+#planesAbout {
+  width: 100%;
+
+}
+
+#home {
+  background: url('images/bgsecond.jpg') 50% 0 no-repeat fixed;
+  color: #fff;
+  height: 600px;
+  margin: 0;
+  padding: 200px 0 260px 0;
+  background-size: cover;
+}
+
+#reporte {
+    background: url(../../images/teletype.png) 50% 0 no-repeat fixed;
+    color: #fff;
+    height: 450px;
+    margin: 0;
+    padding: 200px 0 260px 0;
+}
+
+#clientes {
+  background: url('../../images/teletype.png') 50% 0 no-repeat fixed;
+  color: #fff;
+  height: 610px;
+  margin: 0;
+  padding: 200px 0 260px 0;
+ 
+ 
+}
+
+#planes {
+  background: url('../../images/planes.jpg') 50% 0 no-repeat fixed;
+  color: #fff;
+  height: 370px;
+  margin: 0;
+  padding: 200px 0 260px 0;
+  background-size: cover;
+
+}
+
+
+#about {
+    background-color: #fff;
+    color: #333333;
+    height: auto;
+    margin: 0 auto;
+    /* overflow: hidden; */
+    /* margin-bottom: : 120px; */
+    margin-bottom:  120px;
+    margin-top: -490px;
+
+}
+
+
+#aboutReport{
+    background-color: #fff;
+    color: #333333;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom:  120px;
+    margin-top: -350px;
+}
+
+.container-heigth{
+  height: 500px;
+
+}
+
+#planesAbout {
+/*  background-color: #fff; */
+  color: #333333;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 80px 0;
+  /*margin-bottom: 60px;*/
+position: absolute;
+    z-index: -1;
+    background: url('images/bgsecond.jpg') 50% 0 no-repeat fixed;
+}
+
+#bookPreview {
+  background: url('../../images/bookPreview.png') 50% 0 no-repeat fixed;
+  background-color: #fff;
+  color: #333333;
+      height: 600%;
+  margin: 0 auto;
+
+  margin-bottom:  120px;
+  margin-top: -350px;
+  z-index: -1;
+  }
+
+.capitalFont{
+  font-weight: 800;
+  font-size: 25px;
+    text-decoration: none;
+    /*font-family: 'Wellfleet';*/
+    text-transform: uppercase;
+   /* text-shadow: 2px 2px 3px rgba(0,0,0,.4); */
+}
+
+.capitalFont2{
+  font-weight: 800;
+  font-size: 20px;
+    text-decoration: none;
+    /*font-family: 'Wellfleet';*/
+   
+
+}
+
+
+
+ 
+
+
+#services {
+  background: url('../../images/bgone.jpg') 50% 0 no-repeat fixed;
+  color: #fff;
+  height: 600px;
+  padding: 170px 0 0 0;
+  background-size: cover;
+}
+
+#portfolio {
+  background-color: #fff;
+  color: #333333;
+  height: auto;
+  padding-bottom: 100px;
+}
+
+#contact {
+  background: url('../../images/bgthird.jpg') 50% 0 no-repeat fixed;
+  height: 200px;
+  margin: 0 auto;
+  padding: 250px 0;
+  color: #fff;
+  background-size: cover;
+}
+
+#copyright {
+  color: black;
+  font-family: "Wellfleet";
+  font-size: 14px;
+  
+  text-align: center;
+}
+
+#copyright a {
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+}
+
+#home a {
+  color: #fff;
+}
+
+#home a:hover {
+  color: yellow;
+}
+
+#menu-icon {
+  display: none;
+}
+
+#slidenav,
+ul#slidenav {
+  display: none;
+}
+
+
+.quotes_container ul {
+  list-style: none;
+  display: block;
+}
+
+.icons {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.icons li {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.portfoliocontent {
+  width: 80%;
+  max-width: 960px;
+  margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+}
+
+
+/* Floated Columns ------------------ */
+
+.portfimg1,
+.portfimg2 {
+  width: 46.5%;
+}
+
+.portfimg1 {
+  float: left;
+}
+
+.portfimg2 {
+  float: right;
+}
+
+.portfimg1,
+.portfimg2 {
+  margin-bottom: 10px;
+}
+
+.portfimg1 img,
+.portfimg2 img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #c0bfbe;
+  border-radius: 7px;
+  padding: 4px;
+}
+
+.caption {
+  text-align: center;
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #af3535;
+}
+
+#portfolio h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #af3535;
+  font-family: 'Goudy Bookletter 1911', serif;
+  padding-top: 120px;
+}
+
+
+/* Float Clearfix ------------------ */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Media Queries -------------------- */
+
+@media (max-width: 747px) {
+  ul#slidenavdesktop {
+    display: none;
+  }
+  /* menu icon */
+  #menu-icon {
+    height: 30px;
+    background: url('../../images/menu-icon.png') no-repeat 10px center;
+    background-color: #fff;
+    opacity: 0.9;
+    border-radius: 2px;
+    padding: 8px 10px 0 33px;
+    cursor: pointer;
+    border: solid 1px #666;
+    display: block;
+    /* show menu icon */
+  }
+  #menu-icon:hover {
+    opacity: 0.5;
+  }
+  #menu-icon.active {
+    background-color: 0.7;
+  }
+  /* main nav */
+  #slidenav {
+    clear: both;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    z-index: 10000;
+    padding: 5px;
+    display: none;
+    /* visibility will be toggled with jquery */
+    font-size: 40px;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+  }
+  ul#slidenav {
+    display: none;
+  }
+  #slidenav li {
+    clear: both;
+    float: none;
+    margin: 5px 5px 10px 20px;
+    background: url('../../images/header-bg.png');
+  }
+  .lastslide {
+    margin-top: -189px;
+  }
+  .portfimg1,
+  .portfimg2 {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media (max-width: 636px) {
+  .mobile {
+    display: none;
+  }
+  
+  h1 {
+    font-size: 50px;
+  }
+  
+  #divider {
+    width: 200px;
+  }
+}
+
+@media (min-width: 748px) {
+  /* ensure #nav is visible on desktop version 
+	ul#slidenav {
+		display: block !important;
+	}*/
+}
+
+
+.imgCoverBook{
+  max-height: 500px;
+  opacity: 0.9;
+}
+
+.contentText{
+  height: 100%;
+  background-color:#ffffff9c;
+  color: black;
+}
+
+.titleBook{
+  text-align: center;
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 35px;
+}
+
+.padButton{
+  padding-left: 25px;
+  padding-right: -15px;
+  padding-top: 25px;
+}
+
+.contentRead{
+  text-align: justify;
+    padding: 25px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.bookList{
+  max-height: 230px;
+
+  -webkit-box-shadow: 0 2px 7.68px 0.32px rgba(0, 0, 0, 0.4), 0 12px 26px 0 rgba(0, 0, 0, 0.4);
+}
+
+.bookText{
+  color: black;
+    font-weight: 800;
+}
+.pointer{ cursor: pointer;}

@@ -1,0 +1,152 @@
+
+ 
+
+<link rel="stylesheet" type="text/css" href="../../pages/clientes/clientes.style.css">
+
+
+<div id="reporte">
+
+
+</div>
+
+
+<div id="aboutReport">
+  <div class="container container-heigth">
+   
+	
+
+
+<br>
+<br>
+
+
+
+
+	
+	<div class="col-md-12">
+	<div class="row">
+
+	
+
+	
+<div class="col-md-9" ng-repeat="c in capital">
+			<div class="capitalFont"> Capital Prestado: 
+				<span class="bill" ng-if="c.capital == nul"> Q.0.00 </span>
+				<span class="bill" ng-if="c.capital !=null"> Q.{{c.capital | number}}.00 </span>
+
+			<br>
+
+			Deudores: <span class="debt" ng-if="c.deuda == nul"> Q.0.00 </span> 
+				   <span class="debt" ng-if="c.deuda !=null"> Q.{{c.deuda | number}}.00 </span>
+
+			<br>
+
+			Resultado: <span class="bill" ng-if="c.resultado == nul"> Q.0.00 </span>
+					   <span class="bill" ng-if="c.resultado !=null"> Q.{{c.resultado | number}}.00 </span>
+		</div>
+	</div>
+
+
+
+		<div class="col-md-3">
+			<input type="search" placeholder="Buscar Clientes" title="Search" ng-model="searchText">
+		</div>
+
+
+
+
+
+
+
+<table class="responsive">
+  <thead>
+	  <tr>
+	  	  <th class="theadColor">Código</th>
+		  <th class="theadColor">Cliente</th>
+		  <th class="theadColor">DPI</th>
+		  <th class="theadColor">Teléfono</th>
+      	  <th class="theadColor">Dirección</th>
+		  <th class="theadColor">Local o Negocio</th>
+		  <th class="theadColor">Plan</th>
+		  <th class="theadColor">Capital Prestado</th>
+		  <th class="theadColor">Total Interes</th>
+		  <th class="theadDebe">Debe</th>
+	  </tr>
+  </thead>
+<tr class="pointer"  ng-repeat="cliente in clientes | filter:searchText">
+	<td data-label="Codigo">
+		<a href="#!/cobroscl/{{cliente.id}}/{{cliente.pagoDiario}}/{{cliente.nombre}}/{{cliente.totalPayConInteres}}/{{cliente.deudaTotal}}/{{cliente.plan}}/{{cliente.prestamo}}">		
+			{{cliente.id}}
+	</td>
+
+
+	<td data-label="Nombre">
+		<a href="#!/cobroscl/{{cliente.id}}/{{cliente.pagoDiario}}/{{cliente.nombre}}/{{cliente.totalPayConInteres}}/{{cliente.deudaTotal}}/{{cliente.plan}}/{{cliente.prestamo}}">	
+			{{cliente.nombre}}
+	</td>
+	<td data-label="DPI">
+		<a href="#!/cobroscl/{{cliente.id}}/{{cliente.pagoDiario}}/{{cliente.nombre}}/{{cliente.totalPayConInteres}}/{{cliente.deudaTotal}}/{{cliente.plan}}/{{cliente.prestamo}}">	
+			{{cliente.DPI}}
+	</td>
+	<td data-label="Telefono">
+		<a href="#!/cobroscl/{{cliente.id}}/{{cliente.pagoDiario}}/{{cliente.nombre}}/{{cliente.totalPayConInteres}}/{{cliente.deudaTotal}}/{{cliente.plan}}/{{cliente.prestamo}}">	
+			{{cliente.telefono}}
+	</td>
+	<td data-label="Direccion">
+		<a href="#!/cobroscl/{{cliente.id}}/{{cliente.pagoDiario}}/{{cliente.nombre}}/{{cliente.totalPayConInteres}}/{{cliente.deudaTotal}}/{{cliente.plan}}/{{cliente.prestamo}}">		
+			{{cliente.direccion}}
+	</td>
+	<td data-label="Negocio">
+		<a href="#!/cobroscl/{{cliente.id}}/{{cliente.pagoDiario}}/{{cliente.nombre}}/{{cliente.totalPayConInteres}}/{{cliente.deudaTotal}}/{{cliente.plan}}/{{cliente.prestamo}}">		
+			{{cliente.negocio}}
+	</td>
+	<td data-label="Plan">
+		<a href="#!/cobroscl/{{cliente.id}}/{{cliente.pagoDiario}}/{{cliente.nombre}}/{{cliente.totalPayConInteres}}/{{cliente.deudaTotal}}/{{cliente.plan}}/{{cliente.prestamo}}">		
+			{{cliente.plan }}
+	</td>
+	<td data-label="Prestamo">
+		<a href="#!/cobroscl/{{cliente.id}}/{{cliente.pagoDiario}}/{{cliente.nombre}}/{{cliente.totalPayConInteres}}/{{cliente.deudaTotal}}/{{cliente.plan}}/{{cliente.prestamo}}">		
+			Q.{{cliente.prestamo | number}}.00
+	</td>
+	<td data-label="Prestamo">
+		<a href="#!/cobroscl/{{cliente.id}}/{{cliente.pagoDiario}}/{{cliente.nombre}}/{{cliente.totalPayConInteres}}/{{cliente.deudaTotal}}/{{cliente.plan}}/{{cliente.prestamo}}">		
+			Q.{{cliente.totalPayConInteres | number}}.00
+	</td>
+	<td data-label="DEBE">
+		<a href="#!/cobroscl/{{cliente.id}}/{{cliente.pagoDiario}}/{{cliente.nombre}}/{{cliente.totalPayConInteres}}/{{cliente.deudaTotal}}/{{cliente.plan}}/{{cliente.prestamo}}">		
+			Q.{{cliente.deudaTotal | number}}.00
+	</td>
+</tr>
+
+</table>
+
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+	</div>
+</div>
+
+
+
+</div>
+</div>
+
+

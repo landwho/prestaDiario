@@ -1,0 +1,115 @@
+<link rel="stylesheet" type="text/css" href="../../pages/prestamos/prestamos.style.css">
+
+
+<div id="reporte"></div>
+    
+<div id="aboutReport" class="ng-scope">
+        <div class="container">
+            
+                    
+        
+<div ng-show="loading">
+    <div id="building">
+        <div id="blocks">
+                <div class="b" id="b1"></div>
+                <div class="b" id="b2"></div>
+                <div class="b" id="b3"></div>
+                <div class="b" id="b4"></div>
+        </div>
+        <div id="caption">
+                Agregando cliente...
+        </div>
+    </div>
+</div>
+
+
+<br>
+     
+
+<div class="row" ng-hide="hideForm">
+<div class="col-md-4"><h3>FORMULARIO</h3></div>
+</div>
+
+<div class="row newForm" ng-hide="hideForm">
+
+<div class="col-md-4">DATOS DEL CLIENTE</div>
+<div class="col-md-4"></div>
+<div class="col-md-4">
+<label><strong>Fecha:</strong> </label>
+<input ng-model="date" type="date" ng-disabled="checked" required="" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required">
+</div>
+
+
+        
+<div class="col-md-4">
+<label><strong>Nombre y apellidos</strong> </label>
+<input ng-model="nombre" type="text" ng-disabled="checked" required="" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required">
+
+</div>
+
+<div class="col-md-4">
+<label><strong>DPI </strong> </label>
+<input ng-model="DPI" type="number" maxlength="13" ng-disabled="checked" required="" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-maxlength">
+</div>
+
+<div class="col-md-4">
+<label><strong>Telefono</strong> </label>
+<input ng-model="telefono" type="number" maxlength="8" ng-disabled="checked" class="ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength">
+</div>
+                
+
+<div class="col-md-12">
+<label><strong>Direccion o Residencia</strong> </label>
+<input ng-model="direccion" type="text" ng-disabled="checked" class="ng-pristine ng-untouched ng-valid ng-empty">
+</div>
+
+
+
+
+
+<div class="col-md-12">
+<label><strong>Nombre o direccion del negocio</strong> </label>
+<input ng-model="negocio" type="text" ng-disabled="checked" class="ng-pristine ng-untouched ng-valid ng-empty">
+</div>
+
+<div class="col-md-4">
+<label><strong>Capital prestado</strong> </label>
+<input ng-model="prestamo" type="number" maxlength="4" ng-disabled="checked" class="ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength">
+</div>
+
+<div class="col-md-4">
+<label><strong>Plan</strong> </label>
+<input ng-model="plan" type="number" maxlength="2" ng-disabled="checked" class="ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength">
+</div>
+
+
+<div class="col-md-4 text-right">
+        <br><br>
+<button class="btn btn-warning" type="submit" ng-click="enviarNuevoCliente()" ng-disabled="checked"> GUARDAR 
+</button>
+</div>
+
+
+</div>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+                     
+         
+         <br>
+         <br>
+         <br>
+     
+     
+     </div>
+     </div>
+  
+
+</div>
+</div>

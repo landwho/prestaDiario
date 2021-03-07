@@ -1,0 +1,137 @@
+
+ 
+
+<link rel="stylesheet" type="text/css" href="../../pages/clientes/clientes.style.css">
+
+
+<div id="reporte">
+
+
+</div>
+
+
+<div id="aboutReport">
+  <div class="container container-heigth">
+   
+	
+
+
+<br>
+<br>
+
+
+
+
+	
+	<div class="col-md-12">
+	<div class="row">
+
+	
+
+	
+<div class="col-md-9"></div>
+<br><br>
+
+
+		<div class="col-md-3">
+			<input type="search" placeholder="Buscar Clientes" title="Search" ng-model="searchText">
+			<br><br>
+		</div>
+
+
+
+
+
+
+
+<table class="responsive">
+		
+  <thead>
+	  <tr>
+	  	  <th class="theadColor">Código</th>
+		  <th class="theadColor">Cliente</th>
+		  <th class="theadColor">DPI</th>
+		  <th class="theadColor">Teléfono</th>
+      	  <th class="theadColor">Dirección</th>
+		  <th class="theadColor">Local o Negocio</th>
+		  <th class="theadColor">Plan</th>
+		  <th class="theadColor">Capital Prestado</th>
+		  <th class="theadColor">Total Interes</th>
+		  <th class="theadDebe">Debe</th>
+	  </tr>
+  </thead>
+<tr class="pointer"  ng-repeat="cliente in clientes | filter:searchText">
+	<td data-label="Codigo">
+		<a href="#!/historial/{{cliente.id}}/{{cliente.nombre}}/{{cliente.DPI}}/{{cliente.telefono}}/{{cliente.totalPayConInteres}}">
+		{{cliente.id}}
+	</td>
+	<td data-label="Nombre">
+		<a href="#!/historial/{{cliente.id}}/{{cliente.nombre}}/{{cliente.DPI}}/{{cliente.telefono}}/{{cliente.totalPayConInteres}}">
+		{{cliente.nombre}}
+	</td>
+	<td data-label="DPI">
+		<a href="#!/historial/{{cliente.id}}/{{cliente.nombre}}/{{cliente.DPI}}/{{cliente.telefono}}/{{cliente.totalPayConInteres}}">
+		{{cliente.DPI}}
+	</td>
+	<td data-label="Telefono">
+		<a href="#!/historial/{{cliente.id}}/{{cliente.nombre}}/{{cliente.DPI}}/{{cliente.telefono}}/{{cliente.totalPayConInteres}}">
+		{{cliente.telefono}}
+	</td>
+	<td data-label="Direccion">
+		<a href="#!/historial/{{cliente.id}}/{{cliente.nombre}}/{{cliente.DPI}}/{{cliente.telefono}}/{{cliente.totalPayConInteres}}">
+		{{cliente.direccion}}
+	</td>
+	<td data-label="Negocio">
+		<a href="#!/historial/{{cliente.id}}/{{cliente.nombre}}/{{cliente.DPI}}/{{cliente.telefono}}/{{cliente.totalPayConInteres}}">
+		{{cliente.negocio}}
+	</td>
+	<td data-label="Plan">
+		<a href="#!/historial/{{cliente.id}}/{{cliente.nombre}}/{{cliente.DPI}}/{{cliente.telefono}}/{{cliente.totalPayConInteres}}">
+		{{cliente.plan }}
+	</td>
+	<td data-label="Prestamo">
+		<a href="#!/historial/{{cliente.id}}/{{cliente.nombre}}/{{cliente.DPI}}/{{cliente.telefono}}/{{cliente.totalPayConInteres}}">
+		Q.{{cliente.prestamo | number:2}}
+	</td>
+	<td data-label="Prestamo">
+		<a href="#!/historial/{{cliente.id}}/{{cliente.nombre}}/{{cliente.DPI}}/{{cliente.telefono}}/{{cliente.totalPayConInteres}}">
+		Q.{{cliente.totalPayConInteres | number:2}}
+	</td>
+	<td data-label="DEBE">
+		<a href="#!/historial/{{cliente.id}}/{{cliente.nombre}}/{{cliente.DPI}}/{{cliente.telefono}}/{{cliente.totalPayConInteres}}">
+		Q.{{cliente.deudaTotal | number:2}}
+	</td>
+</tr>
+
+</table>
+
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+	</div>
+</div>
+
+
+
+</div>
+</div>
+
+

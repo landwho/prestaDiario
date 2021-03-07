@@ -1,0 +1,153 @@
+
+  <link rel="stylesheet" type="text/css" href="../../pages/ingresos/ingresos.style.css">
+
+
+
+
+<div id="reporte">
+
+
+</div>
+
+
+<div id="aboutReport">
+  <div class="container">
+   
+
+
+
+
+<br>
+<br>
+
+
+	
+	
+<div class="row">
+	<div class="col-sm-4" >
+
+	  <div class="card card1Color">
+		<div class="card-body">
+		  <h5 class="card-title">
+			  <i class="fa fa-user-o fa-2x" aria-hidden="true"></i>  Clientes</h5>
+			<hr>
+		  <p class="card-text capitalQ" ng-repeat="c in countClient">{{c.contadorClientes}}</p>
+		</div>
+	  </div>
+	
+	</div>
+
+	<div class="col-sm-4">
+		
+		<div class="card card2Color">
+		  <div class="card-body">
+			<h5 class="card-title">
+				<i class="fa fa-pie-chart fa-2x" aria-hidden="true"></i> Prestamos e Intereses %</h5>
+			<hr>
+			<p class="card-text capitalQ" ng-repeat="c in capital">Q.{{c.deuda  | number:2}}</p>
+		  </div>
+		</div>
+	
+	  </div>
+
+	  <div class="col-sm-4">
+		 
+		<div class="card card1Color">
+		  <div class="card-body">
+			<h5 class="card-title">
+				<i class="fa fa-hourglass-half fa-2x" aria-hidden="true"></i> Cobros</h5>
+			<hr>
+			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+		  </div>
+		</div>
+	
+	  </div>
+	  
+
+  </div>
+
+
+  <br><br>
+  <div class="row">
+	<div class="col-sm-6">
+	  <div class="card cardColor">
+		<div class="card-body">
+		  <h5 class="card-title">
+			  <i class="fa fa-quora fa-2x" aria-hidden="true"></i> Capital Prestado</h5>
+		 <hr> 
+		  <p class="card-text capitalQ" ng-repeat="c in capital" numberFormatter>Q.{{c.capital | number:2}}</p>
+		</div>
+	  </div>
+	</div>
+
+	<div class="col-sm-6">
+		<div class="card cardGainColor">
+		  <div class="card-body">
+			<h5 class="card-title">
+				<i class="fa fa-line-chart fa-2x" aria-hidden="true"></i> Total Ganancias</h5>
+			<hr> 
+			<p class="card-text capitalQ" ng-repeat="c in capital">Q.{{c.resultado | number:2}}</p>
+			
+		  </div>
+		</div>
+	  </div>
+
+	 
+	  
+
+  </div>
+
+
+
+
+</div>
+
+
+
+<BR>
+	<BR>
+		<BR>
+
+</div>
+
+
+
+
+
+<style>
+
+
+.card1Color{   
+	background-color: #080a2d;
+    color: white; 
+	   -webkit-box-shadow: inset 4px -5px 4px -4px rgba(0, 0, 0, 0.3),inset 0 1px 0 0 rgba(0, 0, 0, 0.2),inset 0 2px 0 0 rgba(255, 255, 255, 0.2);
+ }
+
+ .card2Color{   
+	background-color: #c97013;
+    color: white; 
+	   -webkit-box-shadow: inset 4px -5px 4px -4px rgba(0, 0, 0, 0.3),inset 0 1px 0 0 rgba(0, 0, 0, 0.2),inset 0 2px 0 0 rgba(255, 255, 255, 0.2);
+ }
+ 
+
+.cardColor{   
+	background-color: #004608;
+    color: white;
+	   -webkit-box-shadow: inset 4px -5px 4px -4px rgba(0, 0, 0, 0.3),inset 0 1px 0 0 rgba(0, 0, 0, 0.2),inset 0 2px 0 0 rgba(255, 255, 255, 0.2);
+ }
+
+ .cardGainColor{   
+	background-color: #004246;
+    color: white;
+	   -webkit-box-shadow: inset 4px -5px 4px -4px rgba(0, 0, 0, 0.3),inset 0 1px 0 0 rgba(0, 0, 0, 0.2),inset 0 2px 0 0 rgba(255, 255, 255, 0.2);
+ }
+.capitalQ{
+	font-size: 30px;
+    text-align: right;
+    font-weight: 600;
+}
+
+
+
+
+</style>

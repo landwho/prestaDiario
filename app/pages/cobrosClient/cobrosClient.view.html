@@ -1,0 +1,87 @@
+<link rel="stylesheet" type="text/css" href="../../pages/cobrosClient/cobrosClient.style.css">
+
+<div id="clientes"></div>
+
+
+<div id="about">
+
+
+
+
+    <div class="container container-heigth">
+
+        <div ng-show="loading">
+            <div id="building">
+                <div id="blocks">
+                        <div class="b" id="b1"></div>
+                        <div class="b" id="b2"></div>
+                        <div class="b" id="b3"></div>
+                        <div class="b" id="b4"></div>
+                </div>
+                <div id="caption">
+                        Realizando Cobro...
+                </div>
+            </div>
+        </div>
+         
+        <br>
+            <br>
+    
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-9"> 
+                <div class="capitalFont ng-binding"> Nombre : tulio demetrio </div> 
+                <span class="capitalFont2 ng-binding"> Prestamo = Q.1,000.00. </span>
+                <div class="capitalFont2 ng-binding"> Total + Interes% Q.1,440.00. </div>
+                <span class="capitalFont2 ng-binding"> Debe Q.1,410.00. </span>
+                <span class="capitalFont2"> | | |  </span>
+                <span class="capitalFont2 ng-binding"> Pago Diario Q.30.00. </span>
+            </div>	
+        </div>
+      
+            <br>
+    
+        <div class="row newForm">
+          
+            <div class="col-md-4">
+                <label><strong>Fecha:</strong> </label>
+                <input ng-model="date" type="date" class="ng-pristine ng-untouched ng-valid ng-empty">
+            </div>
+            
+            <div class="col-md-4">
+                <label><strong>Pago:</strong> </label>
+                <input ng-model="abono" type="number" class="ng-pristine ng-untouched ng-valid ng-empty">
+            </div>
+    
+            <div class="col-md-2">
+                    <br>
+                <button class="btn btn-warning buttonPago" ng-click="cobrar()"> Realizar Pago</button>
+            </div>
+        </div>        
+            
+        <br>
+            <br>
+                <br>
+            
+            
+            
+            
+            
+                <br>
+                <br>
+            
+            
+          
+                
+            
+    </div>
+    </div>
+        
+        
+      
+            
+        
+</div>
+
+
+

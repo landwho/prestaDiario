@@ -1,0 +1,65 @@
+
+
+section{
+  position: relative;
+  padding:100px 10% 0 10%;
+}
+
+
+.product {display: block;
+  float: left;
+  padding-right: 20px;
+  width: 400px;}
+
+.description{
+  /*  background:url("https://1.bp.blogspot.com/-FOjkhBe6ew4/W25qnsDAZwI/AAAAAAAAABU/bSLVt3lD9pctfwDoYobur7ygMn_I1dKBwCEwYBhgL/s1600/Patzicia.12.gif") no-repeat right bottom;
+*/
+  background:url("../../images/2mxilis.jpg") no-repeat right bottom;
+  background-size: cover;		
+  height: 685px;
+  color:white;
+
+}
+.benefits{margin-bottom: 100px;
+}
+
+.team{
+  background-color: orange;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+
+
+footer{
+  text-align: center;
+  font-size: 14px;
+  background-color: #333;
+  height: 300px;
+  color: white;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: rgb(164,	22,	45)	;
+}
+
+figure{position: relative; }
+figure img{width: 180px;height: 180px;border-radius: 50%}
+figcaption{width: 180px; height: 180px; position: absolute; top: 0; right: 0;bottom: 0;left: 0; border-radius: 50%; 
+  background-color: rgba(0,0,0,.5); 
+  color:orange;
+  line-height: 180px; 
+}
+
+/*css animation to reveal figcaptions*/
+figcaption{
+  opacity:0;
+  transition: opacity .3s;
+}
+
+figcaption:hover{
+  opacity:1;
+}
