@@ -13,18 +13,21 @@
 	<br>
 	
 
+	
+	
+	
+	
+	<div class="row">
+		<div class="col-md-9"> <b class="table-font"> BIENVENIDO </b> </div>
+	</div>
+
 	<br>
 	<br>
 	
-	
-	
-	
-		
-		
 	<div class="row">
 		<div class="col-sm-4" >
-	
-		  <div class="card card1Color">
+	<a href="#!/clientes">
+		  <div class="card card1Color" >
 			<div class="card-body">
 			  <h5 class="card-title">
 				  <i class="fa fa-user-o fa-2x" aria-hidden="true"></i>  Clientes</h5>
@@ -32,11 +35,11 @@
 			  <p class="card-text capitalQ" ng-repeat="c in countClient">{{c.contadorClientes}}</p>
 			</div>
 		  </div>
-		
+		</a>
 		</div>
 	
 		<div class="col-sm-4">
-			
+			<a href="#!/getreport">
 			<div class="card card2Color">
 			  <div class="card-body">
 				<h5 class="card-title">
@@ -45,20 +48,20 @@
 				<p class="card-text capitalQ" ng-repeat="c in capital">Q.{{c.deuda  | number:2}}</p>
 			  </div>
 			</div>
-		
+		</a>
 		  </div>
 	
 		  <div class="col-sm-4">
-			 
-			<div class="card card1Color">
-			  <div class="card-body">
-				<h5 class="card-title">
-					<i class="fa fa-hourglass-half fa-2x" aria-hidden="true"></i> Cobros</h5>
-				<hr>
-				<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
-			  </div>
-			</div>
-		
+			<a href="#!/cobros">
+				<div class="card card1Color">
+				<div class="card-body">
+					<h5 class="card-title">
+						<i class="fa fa-hourglass-half fa-2x" aria-hidden="true"></i> Cobros</h5>
+					<hr>
+					<p class="card-text">Listado de clientes a cobrar.</p>
+				</div>
+				</div>
+			</a>
 		  </div>
 		  
 	

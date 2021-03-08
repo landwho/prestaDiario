@@ -1,31 +1,33 @@
 <link rel="stylesheet" type="text/css" href="../../pages/cobrosClient/cobrosClient.style.css">
-<br>
-<br>
 
-<br>
-<br>
-<br>
-<br>
+<br><br>
+<br><br>
+<br><br>
+
+
+<div ng-show="loading">
+    <div id="building">
+        <div id="blocks">
+                <div class="b" id="b1"></div>
+                <div class="b" id="b2"></div>
+                <div class="b" id="b3"></div>
+                <div class="b" id="b4"></div>
+        </div>
+        <div id="caption">
+                Realizando Cobro...
+        </div>
+    </div>
+</div>
+
+
 
 <div class=" card container">
 
-    <div ng-show="loading">
-        <div id="building">
-            <div id="blocks">
-                    <div class="b" id="b1"></div>
-                    <div class="b" id="b2"></div>
-                    <div class="b" id="b3"></div>
-                    <div class="b" id="b4"></div>
-            </div>
-            <div id="caption">
-                    Realizando Cobro...
-            </div>
-        </div>
-    </div>
+ 
      
    
 
-<div class="col-md-12">
+<div class="col-md-12" ng-hide="hideForm">
     <div class="row">
         <div class="col-md-9"> 
             <div class="capitalFont ng-binding"> Nombre : {{nombre}} </div> 
@@ -40,7 +42,7 @@
   
         <br>
 
-    <div class="row newForm">
+    <div class="row newForm" ng-hide="hideForm">
       
         <div class="col-md-1"></div>
         <div class="col-md-4">

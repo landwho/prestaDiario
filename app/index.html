@@ -39,11 +39,12 @@
   <!-- HEADER START-->
 <header id="header">
   <div class="content">
-    <div id="logo"><a href="#!/report"> PRESTA DIARIO </a></div>
+    <div id="logo"><a href="#!/dashboard"> PRESTA DIARIO </a></div>
     <nav id="nav">
       <ul id="slidenav" ng-hide="!user">
+        <li><a href="#!/dashboard" title="Next Section">Panel</a></li>
           <li><a href="#!/clientes" title="Next Section">Clientes</a></li>
-          <li><a href="#!/report" title="Next Section">Reporte</a></li>
+          
           <li><a href="#!/prestamos" title="Next Section">Nuevo</a></li>
             <li><a href="#!/cobros" title="Next Section">Cobrar</a></li>
           <li><a href="#!/planes" title="Next Section">Planes</a></li>         
@@ -54,9 +55,9 @@
    
 
       <ul ng-hide="!user" id="slidenavdesktop">
-   
+        <li><a href="#!/dashboard" title="Next Section">Panel</a></li>
         <li><a href="#!/clientes" title="Next Section">Clientes</a></li>
-        <li><a href="#!/report" title="Next Section">Reporte</a></li>
+        
         <li><a href="#!/prestamos" title="Next Section">Nuevo</a></li>
         <li><a href="#!/cobros" title="Next Section">Cobrar</a></li>
         <li><a href="#!/planes" title="Next Section">Planes</a></li>

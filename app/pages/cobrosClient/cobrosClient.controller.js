@@ -63,7 +63,7 @@ $scope.cobrar = function(){
    let year = date.getFullYear()
    
    $scope.loading=true;
-   $scope.hideLogin=true;
+   $scope.hideForm=true;
 
 
    if(month < 10 && day<10){

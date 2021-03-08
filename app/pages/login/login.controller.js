@@ -18,7 +18,7 @@ angular.module('myApp.login', ['ngRoute'])
   //console.log($scope.storage);
 
   if($scope.storage){ 
-   window.location.href = "/#!/clientes"; 
+   window.location.href = "/#!/dashboard"; 
    $rootScope.user= false;  
   } 
   //else { $rootScope.user= false; }
@@ -58,7 +58,7 @@ $scope.loading;
     
       $rootScope.user = response.data;
       localStorage.setItem("user",response.data);
-      window.location.href = "/#!/clientes"; 
+      window.location.href = "/#!/dashboard"; 
       localStorage.setItem(  "user", JSON.stringify($rootScope.user) );
       }
       $scope.loading=false;

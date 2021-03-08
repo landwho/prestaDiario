@@ -3,7 +3,7 @@
 angular.module('myApp.ingresos', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/report', {
+  $routeProvider.when('/dashboard', {
     templateUrl: 'pages/ingresos/ingresos.view.html',
     controller: 'IngresosCtrl'
   });

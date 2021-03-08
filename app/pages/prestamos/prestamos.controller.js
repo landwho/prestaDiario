@@ -42,16 +42,16 @@ angular.module('myApp.prestamos', ['ngRoute'])
 
 
 $scope.enviarNuevoCliente = function(){
-var date;
+  var date;
   var date = $scope.date.toLocaleDateString();
   //console.log(date);
 
 
   console.log($scope.planInt =parseInt($scope.plan));
   console.log($scope.prestamosInt =parseInt($scope.prestamo));
-console.log("POST CLIENT");
+  console.log("POST CLIENT");
 
-console.log(date);
+  console.log(date);
 
 
 
@@ -94,7 +94,8 @@ else{
 */
 
 
-
+$scope.hideForm = true;
+$scope.loading=true;
 if($scope.DPI==undefined){
   $scope.dpiERROR="* Campo obligatorio";
 }
@@ -105,10 +106,11 @@ if($scope.telefono==undefined){
 else{ 
 
   $scope.loading=true;
-  $scope.checked = true;
+  $scope.hideForm = true;
+  $scope.checked= true;
 
   //simpe method post
-  
+  /*
   $http({
   method: 'POST',
   url: 'https://new-app-mew.herokuapp.com:443/api/react/newclient',
@@ -116,9 +118,6 @@ else{
   headers: {
   'Content-Type': 'application/json'
   },
- 
- 
- 
   data:  JSON.stringify({ 
       fecha: date,
       nombre: $scope.nombre,
@@ -139,7 +138,7 @@ else{
   }).catch(function(error) {
     alert("ERROR!");
   });
-
+*/
 
 
 }
