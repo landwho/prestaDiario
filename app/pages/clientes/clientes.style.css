@@ -11,6 +11,10 @@ thead{
 th{
 	padding: 10px;
 }
+
+
+
+
  /*
 
 
@@ -33,30 +37,11 @@ td {
 		overflow: hidden;
 	}
 	
-	thead {
-		tr {
-			position: absolute;
-			top: -9999px;
-			left: -9999px;
-		}
-	}
-	
-	tr:nth-child(odd) {
-		td {
-			border-bottom: 1px solid #aaa;
-		}
-	}
-	
 	td {
   	display: flex;
 		border-bottom: 1px solid #ccc;
 		
-		&:before { content: attr(data-label)": ";
-			flex: 0 0 5em;
-			font-weight: bold;
-			margin-right: 1em;
-			margin-bottom: 0.25em;
-		}
+	
 	}
 }
 
@@ -121,14 +106,7 @@ input {
 	position: relative;
 	transition: .3s all ease-out;
   width: 20em;
- 
-	&:focus {
-		background-position: 5% 50%;
-    color: #333;
-    outline: 5px solid #fff;
-		padding: 10px 10px 10px 30px;
-		transition: .3s all ease-out;
-	}
+
 }
 
 

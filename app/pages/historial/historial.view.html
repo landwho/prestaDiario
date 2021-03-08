@@ -1,60 +1,51 @@
 <link rel="stylesheet" type="text/css" href="../../pages/historial/historial.style.css">
-
-
-<div id="clientes">
-
-
-</div>
-
-
-<div id="about">
-  <div class="container container-heigth">
+<br><br>
+<br><br>
+<div class="container">
    
      
-     <br><br>
+
 
 <div class="col-md-12">
-	<div class="row">
-		<div class="col-md-9"> 
-			<div class="capitalFont"> {{nombre}} </div> 
-			<span class="capitalFont2"> Teléfono {{phone}}. </span>
-			<div class="capitalFont2">DPI {{DPI}}. </div>
-		</div>
+   <div class="row">
+	   <div class="col-md-9"> 
+		   <div class="capitalFont"> {{nombre}} </div> 
+		   <span class="capitalFont2"> Teléfono {{phone}}. </span>
+		   <div class="capitalFont2">DPI {{DPI}}. </div>
+	   </div>
 
-		<div class="col-md-3">
-			<input type="search" placeholder="Buscar" title="Search" ng-model="searchText">
-		</div>
-	</div>
+	   <div class="col-md-3">
+		   <input type="search" class="input-search" placeholder="Buscar" title="Search" ng-model="searchText">
+	   </div>
+   </div>
 </div>	
 
 <br>
 
 <table class="responsive">
-  <thead>
-	  <tr>
-	  	  <th class="theadColor">Fecha</th>
-		 
-		  <th class="theadColor">Abono</th>
-		  <th class="theadColor">Mora</th>
-	
+ <thead>
+	 <tr>
+		   <th class="theadColor">Fecha</th>
 		
-		  <th class="theadColor">Debe</th>
-		  <th class="theadColor">Días</th>
-	  </tr>
-  </thead>
+		 <th class="theadColor">Abono</th>
+		 <th class="theadColor">Mora</th>
+   
+	   
+		 <th class="theadColor">Debe</th>
+		 <th class="theadColor">Días</th>
+	 </tr>
+ </thead>
 <tr class="pointer"  ng-repeat="cliente in detail | filter:searchText" >
-	<td data-label="Codigo">{{cliente.fechaprestamo | date:'MM/dd/yyyy' }}</td>
-	<td data-label="Plan">Q.{{cliente.abonos | number:2}}</td>
-	<td data-label="Plan">0.00</td>
-	<td data-label="Prestamo">Q.{{cliente.totalapagar | number:2}}</td>
-	<td data-label="Prestamo">{{cliente.depositos}}</td>
-	
-	
+   <td data-label="Codigo">{{cliente.fechaprestamo | date:'MM/dd/yyyy' }}</td>
+   <td data-label="Plan">Q.{{cliente.abonos | number:2}}</td>
+   <td data-label="Plan">0.00</td>
+   <td data-label="Prestamo">Q.{{cliente.totalapagar | number:2}}</td>
+   <td data-label="Prestamo">{{cliente.depositos}}</td>
+   
+   
 </tr>
 
 </table>
 
 <br><br>
-  </div>
-  
-</div>
+ </div>

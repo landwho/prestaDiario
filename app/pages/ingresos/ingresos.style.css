@@ -5,3 +5,39 @@ input{width: 100%; background: #A1ABB5; transition:all 0.3s; display: inline-blo
 
 /*Calidation styles*/
 /*Only on focus*/
+
+
+
+
+.card1Color{   
+	background-color: #080a2d;
+    color: white; 
+	   -webkit-box-shadow: inset 4px -5px 4px -4px rgba(0, 0, 0, 0.3),inset 0 1px 0 0 rgba(0, 0, 0, 0.2),inset 0 2px 0 0 rgba(255, 255, 255, 0.2);
+ }
+
+ .card2Color{   
+	background-color: #c97013;
+    color: white; 
+	   -webkit-box-shadow: inset 4px -5px 4px -4px rgba(0, 0, 0, 0.3),inset 0 1px 0 0 rgba(0, 0, 0, 0.2),inset 0 2px 0 0 rgba(255, 255, 255, 0.2);
+ }
+ 
+
+.cardColor{   
+	background-color: #004608;
+    color: white;
+	   -webkit-box-shadow: inset 4px -5px 4px -4px rgba(0, 0, 0, 0.3),inset 0 1px 0 0 rgba(0, 0, 0, 0.2),inset 0 2px 0 0 rgba(255, 255, 255, 0.2);
+ }
+
+ .cardGainColor{   
+	background-color: #004246;
+    color: white;
+	   -webkit-box-shadow: inset 4px -5px 4px -4px rgba(0, 0, 0, 0.3),inset 0 1px 0 0 rgba(0, 0, 0, 0.2),inset 0 2px 0 0 rgba(255, 255, 255, 0.2);
+ }
+.capitalQ{
+	font-size: 30px;
+    text-align: right;
+    font-weight: 600;
+}
+
+
+

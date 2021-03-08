@@ -1,5 +1,3 @@
-/*General Input*/
-input{width: 100%; background: #A1ABB5; transition:all 0.3s; display: inline-block; padding: 0 10px; border-radius: 5px;    border: 1px solid #888; color: #666; font-size: 25px; margin: 10px 0; line-height: 45px;}
 
 /*Calidation styles*/
 /*Only on focus*/
@@ -18,8 +16,8 @@ textarea {
     line-height: 45px;
 }
 
-
-
+.red{color: red;}
+.green{ color: green;}
 
 
 /* LOADER */

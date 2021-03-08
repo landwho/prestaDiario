@@ -2,7 +2,14 @@
 
 
 
+html{
+  background: url("https://www.bypeople.com/wp-content/uploads/2014/05/light-live-background-css.jpg") ;
+}
 
+.ng-view-background{
+ 
+  background: url("https://www.bypeople.com/wp-content/uploads/2014/05/light-live-background-css.jpg") ;
+}
 
 body {
   margin: 0;
@@ -14,6 +21,97 @@ header,
 nav {
   display: block;
 }
+
+
+.input-search{
+	border: 2px solid #000000;
+}
+
+/*General Input*/
+input{
+    
+  width: 100%;
+ /* background: #A1ABB5; */
+  transition: all 0.3s;
+  display: inline-block;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #888;
+  color: #666;
+  font-size: 20px;
+  /* margin: 10px 0; */
+  line-height: 45px;
+  height: 35px;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+
+}
+
+
+
+
+  /**INPUT SELECT STYLE*/
+
+  /*the container must be positioned relative:*/
+  .custom-select {
+    position: relative;
+    font-family: Arial;
+    }
+    
+    .custom-select select {
+    display: none; /*hide original SELECT element:*/
+    }
+    
+    .select-selected {
+    background-color: DodgerBlue;
+    }
+    
+    /*style the arrow inside the select element:*/
+    .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+    }
+    
+    /*point the arrow upwards when the select box is open (active):*/
+    .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+    }
+    
+    /*style the items (options), including the selected item:*/
+    .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+    }
+    
+    /*style items (options):*/
+    .select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    }
+    
+    /*hide the items when the select box is closed:*/
+    .select-hide {
+    display: none;
+    }
+    
+    .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+    }
 
 
 
@@ -169,7 +267,7 @@ a:hover{color:orange;}
 }
 
 #reporte {
-    background: url(../../images/teletype.png) 50% 0 no-repeat fixed;
+   /* background: url(../../images/teletype.png) 50% 0 no-repeat fixed;*/
     color: #fff;
     height: 450px;
     margin: 0;

@@ -1,87 +1,73 @@
 <link rel="stylesheet" type="text/css" href="../../pages/cobrosClient/cobrosClient.style.css">
+<br>
+<br>
 
-<div id="clientes"></div>
+<br>
+<br>
+<br>
+<br>
 
+<div class=" card container">
 
-<div id="about">
-
-
-
-
-    <div class="container container-heigth">
-
-        <div ng-show="loading">
-            <div id="building">
-                <div id="blocks">
-                        <div class="b" id="b1"></div>
-                        <div class="b" id="b2"></div>
-                        <div class="b" id="b3"></div>
-                        <div class="b" id="b4"></div>
-                </div>
-                <div id="caption">
-                        Realizando Cobro...
-                </div>
+    <div ng-show="loading">
+        <div id="building">
+            <div id="blocks">
+                    <div class="b" id="b1"></div>
+                    <div class="b" id="b2"></div>
+                    <div class="b" id="b3"></div>
+                    <div class="b" id="b4"></div>
+            </div>
+            <div id="caption">
+                    Realizando Cobro...
             </div>
         </div>
-         
+    </div>
+     
+   
+
+<div class="col-md-12">
+    <div class="row">
+        <div class="col-md-9"> 
+            <div class="capitalFont ng-binding"> Nombre : {{nombre}} </div> 
+            <span class="capitalFont2 ng-binding"> Prestamo = Q {{prestamo}} </span>
+            <div class="capitalFont2 ng-binding"> Total + Interes% Q {{interes}} </div>
+            <span class="capitalFont2 ng-binding green"> Pago Diario Q {{pagoDiario}} </span>
+            <span class="capitalFont2"> | | |  </span>
+            <span class="capitalFont2 ng-binding red"> Debe Q {{debe}} </span>
+            
+        </div>	
+    </div>
+  
         <br>
-            <br>
-    
-    <div class="col-md-12">
-        <div class="row">
-            <div class="col-md-9"> 
-                <div class="capitalFont ng-binding"> Nombre : {{nombre}} </div> 
-                <span class="capitalFont2 ng-binding"> Prestamo = Q {{prestamo}} </span>
-                <div class="capitalFont2 ng-binding"> Total + Interes% Q {{interes}} </div>
-                <span class="capitalFont2 ng-binding"> Debe Q {{debe}} </span>
-                <span class="capitalFont2"> | | |  </span>
-                <span class="capitalFont2 ng-binding"> Pago Diario Q {{pagoDiario}} </span>
-            </div>	
-        </div>
+
+    <div class="row newForm">
       
-            <br>
-    
-        <div class="row newForm">
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+            <label><strong>Fecha *</strong> </label>
+            <input ng-model="date" type="date" class="ng-pristine ng-untouched ng-valid ng-empty">
+        </div>
+        
+        <div class="col-md-4">
+            <label><strong>Pago *</strong> </label>
+            <input ng-model="abono" type="number" class="ng-pristine ng-untouched ng-valid ng-empty">
+        </div>
+
+        <div class="col-md-2">
+                <br>
+            <button class="btn btn-warning buttonPago" ng-click="cobrar()"> Realizar Pago</button>
+        </div>
+    </div>        
           
-            <div class="col-md-4">
-                <label><strong>Fecha:</strong> </label>
-                <input ng-model="date" type="date" class="ng-pristine ng-untouched ng-valid ng-empty">
-            </div>
-            
-            <div class="col-md-4">
-                <label><strong>Pago:</strong> </label>
-                <input ng-model="abono" type="number" class="ng-pristine ng-untouched ng-valid ng-empty">
-            </div>
-    
-            <div class="col-md-2">
-                    <br>
-                <button class="btn btn-warning buttonPago" ng-click="cobrar()"> Realizar Pago</button>
-            </div>
-        </div>        
-            
-        <br>
             <br>
-                <br>
-            
-            
-            
-            
-            
-                <br>
-                <br>
-            
-            
-          
-                
-            
-    </div>
-    </div>
+            <br>
         
         
       
             
         
 </div>
-
+</div>
+    
 
 
