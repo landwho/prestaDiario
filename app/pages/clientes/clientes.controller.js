@@ -18,11 +18,12 @@ angular.module('myApp.clientes', ['ngRoute'])
 // Simple GET request example:
 $http({
   method: 'GET',
-//  url: 'http://localhost:3000/api/react/webclients'
+ //url: 'http://localhost:3000/api/react/webclients'
  url: 'https://new-app-mew.herokuapp.com:443/api/react/webclients'
 }).then(function successCallback(response) {
 
-	$scope.clientes = response.data;
+	  $scope.clientes = response.data;
+    console.log($scope.clientes)
    	
   }, function errorCallback(err) {
     console.log(err);
