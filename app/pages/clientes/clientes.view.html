@@ -1,37 +1,46 @@
 <link rel="stylesheet" type="text/css" href="../../pages/clientes/clientes.style.css">
 
 
-<div class="container">
+  <br><br>
+  <br><br>
+  <br><br>
+
+  <div class="container" ng-show="loading">
+	<div id="building">
+	  
+		<div id="caption" class="caption-title">
+				Cargando ...
+		</div>
+	</div>
+	<svg ng-show="loading" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1728 1296">
+		<rect x="153.55" y="492.48" width="311.04" height="311.04" fill="#ff499e" />
+		<rect x="519.55" y="492.48" width="311.04" height="311.04" fill="#99267e" />
+		<rect x="883.41" y="492.48" width="311.04" height="311.04" fill="#9c5ea8" />
+		<rect x="1263.41" y="492.48" width="311.04" height="311.04" fill="#798fd4" />
+	</svg>
+
+</div>
+
+
+<div class="container" ng-hide="hideForm">
    
-	
 
-
-	<br>
-	<br>
-	
-	<br>
-	<br>
-	
-	
-	
-	
-		
 		<div class="col-md-12">
 		<div class="row">
 	
 		
 	
 		
-			<div class="col-md-9"> <b class="table-font"> CLIENTES PRESTA DIARIO </b> </div>
-	<br><br>
+		<div class="col-md-9"> <b class="table-font"> CLIENTES PRESTA DIARIO </b> </div>
+		<br><br>
 	
-	
-			<div class="col-md-3">
-				<input type="search" class="input-search" placeholder="Buscar Clientes" title="Search" ng-model="searchText">
-				<br><br>
-			</div>
-	
-	
+
+		<div class="col-md-3">
+			<input type="search" class="input-search" placeholder="Buscar Clientes" title="Search" ng-model="searchText">
+			<br><br>
+		</div>
+
+
 	
 	
 	

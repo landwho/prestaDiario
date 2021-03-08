@@ -18,3 +18,11 @@ textarea {
 
 .red{color: red;}
 .green{ color: green;}
+.caption-title{ font-size: 20px;}
+
+svg {
+    display: block;
+    width: 50%;
+    margin: -190px auto;
+    height: 100vh;
+}

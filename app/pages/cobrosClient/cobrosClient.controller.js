@@ -154,8 +154,6 @@ $scope.cobrar = function(){
     });
   }//end else if
 
-
-
   else{
     var date4 = `${day}/${month}/${year}`;
     //simpe method post
@@ -182,7 +180,7 @@ $scope.cobrar = function(){
     console.log(err);
     });
   }//end else
-    
+  
 
 
 
@@ -193,8 +191,21 @@ $scope.cobrar = function(){
 
    
 
+$rootScope.logOut = function (){
+  window.location.reload(); 
+  localStorage.removeItem('user');
+  localStorage.clear();
+};
 
 
+
+
+gsap.to("rect", {
+  scale: 0.5,
+  transformOrigin: "center",
+  duration: 1,
+  stagger: { yoyo: true, repeat: -1, each: 0.4 }
+});
 
 
 

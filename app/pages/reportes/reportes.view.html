@@ -1,63 +1,92 @@
 
-
+<link rel="stylesheet" href=".../../pages/reportes/reportes.style.css">
   <br><br>
   <br><br>
-            
+  <br><br>     
 
-    <div class="container">
+
+  <div class="container" ng-show="loading">
+    <div id="building">
+      
+        <div id="caption" class="caption-title">
+              Cargando Reporte ...
+        </div>
+    </div>
+</div>
+<svg ng-show="loading" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1728 1296">
+        <rect x="153.55" y="492.48" width="311.04" height="311.04" fill="#ff499e" />
+        <rect x="519.55" y="492.48" width="311.04" height="311.04" fill="#99267e" />
+        <rect x="883.41" y="492.48" width="311.04" height="311.04" fill="#9c5ea8" />
+        <rect x="1263.41" y="492.48" width="311.04" height="311.04" fill="#798fd4" />
+</svg>
+
+
+    <div class="container" ng-hide="hideForm">
      
        
-       
-        <br><br>
-            
-    
-
-
 <div class="col-md-12">
-    <div class="row">
-        
-
-  
-</div>
   
         <div class="row">
-            <div class="col-md-6"> <h3>REPORTE DEL DÍA </h3> </div>
-                <div class="col-md-4">
-                    
-                    <input ng-model="date" type="date" value="20/01/2019" class="ng-pristine ng-untouched ng-valid ng-empty">
-                </div>
+            <div class="col-md-6"> 
+                <h3>REPORTE DEL DÍA </h3> 
+            </div>
+            <div class="col-md-4">
+                <input ng-model="date" type="date" value="20/01/2019" class="ng-pristine ng-untouched ng-valid ng-empty">
+            </div>
+            <div class="col-md-2 text-right">
+                <button class="btn btn-warning buttonwidth" ng-click="getReport()">REPORTE</button>
+            </div>
+        </div>        
+
+        <br>
+                  
+
+    <table id="customers" ng-if="reportToDate.length > 0">
 
 
-                <div class="col-md-2 text-right">
-                    <button class="btn btn-warning buttonwidth" ng-click="getReport()">REPORTE</button>
-                </div>
-        
-             
-            </div>        
-        
-                    <br>
-        
-        
-        
-    <table class="responsive">
-            <thead>
-                <tr>
-                    <th class="theadColor">Fecha</th>
-                    <th class="theadColor">Cliente</th>
-                    <th class="theadColor">Abono</th>
-                
-             
-                </tr>
-            </thead>
-            <tbody><!-- ngRepeat: r in reportToDate | filter:searchText -->
-            <tr class="totalBackGroundColor">  
-                <td class="totalBackGroundColor">  TOTAL</td> 
-                <td class="totalBackGroundColor"> </td> 
-                <td class="totalBackGroundColor ng-binding"> Q.</td> 
-            </tr>
-          
-            
-            </tbody></table>
+
+
+        <tr>
+            <th>Fecha</th>
+            <th>Cliente</th>
+            <th>Abono Q.</th>
+        </tr>
+  
+        <tr ng-repeat="r in reportToDate"> 
+            <td>{{r.pago}}</td>
+            <td>{{r.cliente}}</td>
+            <td>Q. {{r.abonos | number:2}}</td>
+        </tr>
+
+
+
+    </table>
+
+    <div class="card container">
+        <div ng-if="reportToDate.length == 0">No Existen cobros</div>
+    </div>
+
+  <br>
+
+
+<div class="row">
+<div class="col-md-9"></div>
+<div class="col-md-3">
+    <b class="green total" ng-if="reportToDate.length > 0">
+        Total: Q. {{grandTotal | number:2}}
+    </b>
+
+    <b class="green total" ng-if="reportToDate.length == 0">
+        Total: Q. {{grandTotal | number:2}}
+    </b>
+</div>
+</div>
+
+
+
+
+
+
         
             <br><br><br>
         

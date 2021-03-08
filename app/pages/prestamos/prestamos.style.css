@@ -18,6 +18,12 @@ textarea {
   line-height: 45px;
 }
 
+svg {
+  display: block;
+  width: 50%;
+  margin: -190px auto;
+  height: 100vh;
+}
 
 
 

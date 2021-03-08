@@ -69,7 +69,8 @@ $scope.getReport = function(){
     let month = date.getMonth() + 1
     let year = date.getFullYear()
     
-
+    $scope.hideForm = true;
+    $scope.loading=true;
 
     //#1
     if(month < 10 && day<10){
@@ -86,7 +87,8 @@ $scope.getReport = function(){
        })}).then(function(response) {
         $scope.reportToDate = response.data[0];
        console.log($scope.reportToDate);
-
+       $scope.hideForm = false;
+       $scope.loading=false;
        $scope.grandTotal = 0;
 
        for(var i = 0 ; i<$scope.reportToDate.length; i++){
@@ -123,7 +125,8 @@ $scope.getReport = function(){
           fechaprestamo:   date2
        })}).then(function(response) {
         $scope.reportToDate = response.data[0];
-
+        $scope.hideForm = false;
+        $scope.loading=false;
         $scope.grandTotal = 0;
 
        for(var i = 0 ; i<$scope.reportToDate.length; i++){
@@ -154,7 +157,8 @@ $scope.getReport = function(){
           fechaprestamo:   date3
        })}).then(function(response) {
         $scope.reportToDate = response.data[0];
-
+        $scope.hideForm = false;
+        $scope.loading=false;
         $scope.grandTotal = 0;
 
         for(var i = 0 ; i<$scope.reportToDate.length; i++){
@@ -186,7 +190,8 @@ $scope.getReport = function(){
           fechaprestamo:   date4
        })}).then(function(response) {
         $scope.reportToDate = response.data[0];
-        
+        $scope.hideForm = false;
+        $scope.loading=false;
         $scope.grandTotal = 0;
 
         for(var i = 0 ; i<$scope.reportToDate.length; i++){
@@ -257,6 +262,19 @@ $scope.getReport = function(){
 // ventimp.close(); 
 // } 
 
+
+
+
+
+
+
+
+gsap.to("rect", {
+  scale: 0.5,
+  transformOrigin: "center",
+  duration: 1,
+  stagger: { yoyo: true, repeat: -1, each: 0.4 }
+});
 
 
 

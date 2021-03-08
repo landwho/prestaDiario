@@ -40,6 +40,7 @@ $scope.loading;
   //console.log( $scope.email);
   //console.log( $scope.pass);
 
+  
 
   //simpe method post
   $http({
@@ -62,15 +63,21 @@ $scope.loading;
       localStorage.setItem(  "user", JSON.stringify($rootScope.user) );
       }
       $scope.loading=false;
-      $scope.hideLogin=false;
+      $scope.hideLogin=false; 
       $scope.message ="* Usuario invalido";
       //console.log(response.data);
   }, 
   function(err) { // optional
-    $scope.loading=false;
+    $scope.loading=false; 
     $scope.hideLogin=false;
   console.log(err);
   });
+  
+
+
+
+
+
 
  }; 
 
@@ -82,5 +89,15 @@ $rootScope.logOut = function (){
 };
 
 
+
+gsap.to("rect", {
+  scale: 0.5,
+  transformOrigin: "center",
+  duration: 1,
+  stagger: { yoyo: true, repeat: -1, each: 0.4 }
+});
+
+
+
   
-  }]);
+}]);

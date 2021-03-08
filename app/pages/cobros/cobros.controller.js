@@ -17,7 +17,8 @@ angular.module('myApp.cobros', ['ngRoute'])
   $scope.storage = localStorage.getItem("user");
   console.log($scope.storage);
   if(!$scope.storage){ window.location.href = "/#!/login";  } else { $rootScope.user= true; }
- 
+  $scope.loading= true;
+  $scope.hideForm= true;
 
   //if($rootScope.veryfy == null){ window.location.href = "/#!/login";}
 
@@ -29,7 +30,8 @@ $http({
 }).then(function successCallback(response) {
 
 	$scope.clientes = response.data;
-   	console.log($scope.clientes);
+  $scope.loading= false;
+  $scope.hideForm= false;
    	
   }, function errorCallback(response) {
     // called asynchronously if an error occurs
@@ -45,6 +47,15 @@ $http({
   };
 
 
+
+  gsap.to("rect", {
+    scale: 0.5,
+    transformOrigin: "center",
+    duration: 1,
+    stagger: { yoyo: true, repeat: -1, each: 0.4 }
+  });
+  
+  
 	
 
 }]);

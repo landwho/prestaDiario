@@ -110,7 +110,7 @@ else{
   $scope.checked= true;
 
   //simpe method post
-  /*
+  
   $http({
   method: 'POST',
   url: 'https://new-app-mew.herokuapp.com:443/api/react/newclient',
@@ -138,7 +138,15 @@ else{
   }).catch(function(error) {
     alert("ERROR!");
   });
-*/
+
+
+
+}
+
+
+
+
+
 
 
 }
@@ -149,12 +157,13 @@ else{
 
 
 
-}
 
-
-
-
-
+gsap.to("rect", {
+  scale: 0.5,
+  transformOrigin: "center",
+  duration: 1,
+  stagger: { yoyo: true, repeat: -1, each: 0.4 }
+});
 
 
 

@@ -41,3 +41,9 @@ input{width: 100%; background: #A1ABB5; transition:all 0.3s; display: inline-blo
 
 
 
+svg {
+    display: block;
+    width: 50%;
+    margin: -190px auto;
+    height: 100vh;
+}

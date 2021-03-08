@@ -16,87 +16,16 @@ input{
     height: 36px;
 }
 
-
+.total{
+	font-size: 20px;
+    font-weight: 600;
+	color: green;
+}
 
 /*Calidation styles*/
 /*Only on focus*/
 
 
-
-table {
-	width: 100%;
-}
-
-thead{
-	background-color: cornflowerblue;
-}
-
-
-th{
-	padding: 10px;
-}
- /*
-
-
-tr:nth-child(odd) {
-  background-color: #ccc; 
-}
-*/
-td {
-	padding: 0.25em 0.5em;
-}
-
-@media (max-width: 500px) {
-	table,
-	thead, 
-	tbody, 
-	th, 
-	td, 
-	tr {
-		display: block;
-		overflow: hidden;
-	}
-	
-	/*thead {
-		tr {
-			position: absolute;
-			top: -9999px;
-			left: -9999px;
-		}
-	}
-	
-	tr:nth-child(odd) {
-		td {
-			border-bottom: 1px solid #aaa;
-		}
-	}
-	
-	td {
-  	display: flex;
-		border-bottom: 1px solid #ccc;
-		
-		&:before { content: attr(data-label)": ";
-			flex: 0 0 5em;
-			font-weight: bold;
-			margin-right: 1em;
-			margin-bottom: 0.25em;
-		}
-	}*/
-    
-}
-
-
-/* defaults */
-*,
-*::before,
-*::after {
-	box-sizing: inherit;
-}
-
-html {
-	box-sizing: border-box;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
 
 
 .pointer {
@@ -107,39 +36,45 @@ html {
 
 
 
-table { 
-    width: 100%;
+
+
+
+
+
+
+
+
+/*tabla reportes***/
+    
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    background: #c0c0c0;
-    color: #000000;
-    font-weight: 500;
-}
-/* Zebra striping */
-tr:nth-of-type(odd) { 
-  background: #e1e0c9;
-    color: black;
-}
-
-th { 
-  background: #2c3e50; 
-  font-weight: bold; 
-}
-
-.theadColor {
-	color: white;
-
-}
-
-
-
-.totalBackGroundColor {
-    background-color: #4d7e4d73;
-}
-
-.clientReportTransform{
-    text-transform: capitalize;
-}
-
-.buttonwidth{
     width: 100%;
-}
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+
+
+
+svg {
+    display: block;
+    width: 50%;
+    margin: -190px auto;
+    height: 100vh;
+  }
+  

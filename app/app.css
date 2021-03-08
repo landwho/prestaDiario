@@ -7,8 +7,8 @@ html{
 }
 
 .ng-view-background{
- 
   background: url("https://www.bypeople.com/wp-content/uploads/2014/05/light-live-background-css.jpg") ;
+  z-index: -1;
 }
 
 body {
@@ -634,8 +634,22 @@ ul#slidenav {
 
 
 
+/*Loader*/
+/*
+svg {
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+  height: 100vh;
+  } */
 
 
+svg {
+  display: block;
+  width: 50%;
+  margin: -190px auto;
+  height: 100vh;
+}
 
 
 .table-font{
@@ -662,6 +676,8 @@ ul#slidenav {
 	margin: auto;
 	height: 0px;
 	font-size: 18px;
+  font-weight: 700;
+  color:  #6610f2;
   }
   #building {
 	display: flex;
@@ -673,8 +689,10 @@ ul#slidenav {
 	margin: auto;
   }
   .b {
-	background: #d5fff7;
-/*	border: 3px solid #89f2f2;*/
+	/*background: #d5fff7;
+	border: 3px solid #89f2f2;*/
+  background: #e83e8c;
+  border: 3px solid #6f42c1;
 	width: 45px;
 	height: 45px;
 	border-radius: 5px;

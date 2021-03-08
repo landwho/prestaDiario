@@ -1,27 +1,29 @@
   <link rel="stylesheet" type="text/css" href="../../pages/login/login.style.css">
   
  
- 
+
+ <div class="" ng-show="loading">
+	 <br><br><br><br><br><br> <br><br>
+    <div id="building">
+        <div id="caption" class="caption-title">
+                Cargando ...
+        </div>
+    </div>
+	<svg ng-show="loading" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1728 1296">
+		<rect x="153.55" y="492.48" width="311.04" height="311.04" fill="#ff499e" />
+		<rect x="519.55" y="492.48" width="311.04" height="311.04" fill="#99267e" />
+		<rect x="883.41" y="492.48" width="311.04" height="311.04" fill="#9c5ea8" />
+		<rect x="1263.41" y="492.48" width="311.04" height="311.04" fill="#798fd4" />
+	</svg>
+</div>
 
 
- <div ng-show="loading">
-	<div id="building">
-		<div id="blocks">
-		  <div class="b" id="b1"></div>
-		  <div class="b" id="b2"></div>
-		  <div class="b" id="b3"></div>
-		  <div class="b" id="b4"></div>
-		</div>
-		<div id="caption">
-		  Espera mientras carga el sistema ...
-		</div>
-	  </div>
- </div>
+
 
 
 
 <div class="login-wrap" ng-hide="hideLogin">
-	<div class="login-html">
+	<div class="login-html" ng-hide="hideLogin">
 		<input id="tab-1" type="radio" name="tab" class="sign-in" checked>
 		<label for="tab-1" class="tab">Login</label>
 		<input id="tab-2" type="radio" name="tab" class="for-pwd">
@@ -34,7 +36,7 @@
 
 
 		
-		<div class="login-form">
+		<div class="login-form" ng-hide="hideLogin">
 			<div class="sign-in-htm">
 				<div class="group">
 					<label for="user"  class="label">Nombre de Usuario</label>
@@ -51,7 +53,7 @@
 				<!--<div class="group">
 					<input type="submit" ng-click="registrar()" class="button" value="Registar">
 				</div>-->
-				<span>{{message}}</span>
+				<span class="red">{{message}}</span>
 			</div>
 
 			<div class="for-pwd-htm">
