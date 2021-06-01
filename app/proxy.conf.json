@@ -1,0 +1,7 @@
+{
+    "/api/*":{
+        "target":"https://new-app-mew.herokuapp.com:443/api/react/login",
+        "secure":false,
+        "logLevel":"debug"
+    }
+}

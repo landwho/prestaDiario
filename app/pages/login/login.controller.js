@@ -47,9 +47,13 @@ $scope.loading;
     method: 'POST',
     url: 'https://new-app-mew.herokuapp.com:443/api/react/login',
    // url: 'http://localhost:3000/api/react/login',
-    headers: {
-      'Content-Type': 'application/json'
-  },
+   headers:{
+    'Content-Type': 'application/json',
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Origin": "https://new-app-mew.herokuapp.com:443/api/react/login",
+    "Access-Control-Allow-Origin": "http://localhost:8000",
+    'Accept': 'application/json'
+                  },
     data:  JSON.stringify({ 
           usuario: $scope.email,
           password: $scope.pass,
@@ -71,6 +75,8 @@ $scope.loading;
     $scope.loading=false; 
     $scope.hideLogin=false;
   console.log(err);
+  }).catch(function(response){
+    console.log("error", response)
   });
   
 
